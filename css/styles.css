@@ -25,6 +25,7 @@ nav ul{
 }
 nav ul li{
     list-style: none; 
+    
 }
 nav ul li a{
     text-decoration: none;
@@ -39,43 +40,106 @@ nav ul li a{
 .identidade{
     font-size: 1.3em;
     text-align: center;
-    background-color: rgb(5, 59, 55);
+    background-image: linear-gradient(rgba(0,0,0,1),rgba(255,0,0,0.1)), url(../imagens/designer.jpeg);
     padding: 100px 0;
     color: white;
+   
 }
 .aulas{
+    display: flex;
     background: rgb(2, 30, 83);
     color: white;
-    padding: 50px 0;
+    padding: 5px 0;
+    text-align: center;
+    height: 140px;
 }
 .aulas ul{
     display: flex;
+    
 
 }
 .aulas ul li{
+    display: flex;
     list-style: none;
+    background-color: rgb(55, 85, 141);
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 3px double rgb(8, 8, 117);
+    cursor: pointer;
+
+}
+.aulas ul li:hover{
+    width: 105px;
+    height: 105px;
+    
 }
 .comentarios{
     background-color: rgb(5, 59, 55);
     color: white;
 }
+h3{
+    text-align: center;
+    padding: 20PX;
+}
 .comentarios_lista ul{
     display: flex;
+}
+ .comentarios_lista ul li{
+    display: flex;
+    padding: 10px;
+    border-radius: 10px;
+    list-style: none;
+    height: 200px;
+    border: 2px solid red;
+    width: 1000px;
+    text-align: center;
+    align-items: center;
+    height: 200px;
+    
+
+}
+strong{
+    padding-right: 50px;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+footer{
+    background: rgb(2, 30, 83);
+}
+.footer ul{
+    display: flex;
+    gap: 10px;
+}
+.footer ul li{
+    list-style: none;
+    margin: 10px 0;
+
+}
+.footer ul li a{
+    color: rgb(212, 219, 221);
+}
+.mine-mapa:hover{
+    position: fixed;
+    width: 600px;
+    height: 600px;
+    bottom: 0;
+    left: 0;
+    border-radius: 20px;
    
-  
+}
+.mine-mapa{
+    width: 20px;
+    height: 20px;
     
 }
-.comentarios_lista ul li{
-    display: flex;
-    gap: 50px;
-    padding: 50px;
-    border: 2px solid black;
-    align-items: center;
-    text-align: center;
-    height: 250px;
-    width: 1000px;
-    
-    
-    
-    
+.elemento{
+    scale: 0.1;
 }
