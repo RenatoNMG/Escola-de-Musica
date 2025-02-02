@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Escola de Música Lapa</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    
 
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+
     <header>
         <div class="wrapper">
             <div class="barra-top">
@@ -18,19 +21,25 @@
                 <nav>
                     <ul>
                         <li><a href="#">HOME</a></li>
-                        <li><a href="#">Cursos</a></li>
-                        <li><a href="#">Depoimentos de Alunos</a></li>
-                        <li><a href="#">Contato</a></li>
+                        <li><a href="#aulas">Cursos</a></li>
+                        <li><a href="#carrossel">Depoimentos de Alunos</a></li>
+                        <li><a href="#" id="contato">Contato &#9660;</a>
+                            <div  class="drop" id="drop">
+                                <p><a target="_blank" href="https://www.google.com/maps/place/Senac+Lapa+Tito/@-23.5280859,-46.6943351,703m/data=!3m2!1e3!4b1!4m6!3m5!1s0x94cef8775663b04f:0x923835e9005f8309!8m2!3d-23.5280859!4d-46.6917602!16s%2Fg%2F1tf7htl9?entry=ttu&g_ep=EgoyMDI1MDEyOS4xIKXMDSoASAFQAw%3D%3D">Endereço</a></p>
+                                <p ><a target="_blank" href="https://www.google.com/search?client=firefox-b-d&q=whatsapp">(11)99999 9999</a></p>
+                            </div>
+                        </li>
                     </ul>
                 </nav>
             </div>
             
         </div>
     </header>
-
+   
     <main>
-        <div  class="identidade ">
+        <div  class="identidade">
             <aside class="wrapper">
+                <h2>Escola de Música Lapa Tito</h2>
                 <p class="elemento">A identidade visual da Escola Horizonte Aberto é marcada
                      por tons de verde e amarelo, que transmitem harmonia, 
                      crescimento e otimismo. O logo é uma representação estilizada 
@@ -38,7 +47,7 @@
                      de aprendizado e o futuro promissor dos nossos alunos.</p>
             </aside>
         </div>
-        <div class="aulas">
+        <div class="aulas" id="aulas">
             <aside class="wrapper">
                 <ul>
                     <li>Teoria Musical</li>
@@ -51,18 +60,21 @@
                 </ul>
             </aside>
         </div>
-        <div class="comentarios">
-            <aside class="wrapper">
-                <div class="comentarios_lista">
-                    <h3>comentarios De Nosso Alunos</h3>
-                    <ul>
-                        <li>"O curso de Produção Musical abriu meus olhos para um mundo totalmente novo! Agora consigo criar minhas próprias músicas no computador e até gravar com a minha banda. A parte de mixagem e gravação foi o que mais me encantou!"</li>
-                        <li>"Sempre sonhei em aprender a tocar piano, e aqui eu consegui! As aulas são super dinâmicas, e a professora tem uma paciência incrível. Sinto que estou melhorando a cada dia."</li>
-                        <li>"O curso de Técnica Vocal foi transformador para mim. Nunca imaginei que conseguiria cantar tão bem! Aprendi a controlar minha respiração e a melhorar minha afinação. Agora me sinto muito mais confiante no palco."</li>
-                        <li>"Adorei as aulas de História da Música! Descobri tantos estilos e artistas incríveis que eu nunca tinha ouvido falar. Isso me fez olhar para a música de uma forma muito mais rica e cheia de significados."</li>
-                        <li>"O curso de Composição e Arranjo me ajudou a entender como criar músicas do zero. As aulas práticas e os desafios semanais são super legais, e agora eu compuso minha primeira música completa!"</li>
-                    </ul>
-
+        <div>
+            <aside class="carrossel" id="carrossel">
+             
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">"O curso de Produção Musical abriu meus olhos para um mundo totalmente novo! Agora consigo criar minhas próprias músicas no computador e até gravar com a minha banda. A parte de mixagem e gravação foi o que mais me encantou!" -Lucas</div>
+                        <div class="swiper-slide">"Sempre sonhei em aprender a tocar piano, e aqui eu consegui! As aulas são super dinâmicas, e a professora tem uma paciência incrível. Sinto que estou melhorando a cada dia." -Mariana</div>
+                        <div class="swiper-slide">"Adorei as aulas de História da Música! Descobri tantos estilos e artistas incríveis que eu nunca tinha ouvido falar. Isso me fez olhar para a música de uma forma muito mais rica e cheia de significados." -Rafael</div>
+                        <div class="swiper-slide">"O curso de Composição e Arranjo me ajudou a entender como criar músicas do zero. As aulas práticas e os desafios semanais são super legais, e agora eu compuso minha primeira música completa!" -Abigail</div>
+                    </div>
+                    <!-- Botões de navegação -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <!-- Paginação -->
+                    <div class="swiper-pagination"></div>
                 </div>
                 
             </aside>
@@ -93,6 +105,7 @@
                 
                     <iframe  class="mine-mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2586.7093122367874!2d-46.69248730397871!3d-23.52676893350404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1738281078619!5m2!1spt-BR!2sbr" style="border:1px solid blue;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div></li>
+                <li class="local">&#x2B05; Nosso Local</li>
                   
                
             </ul>
@@ -102,7 +115,10 @@
         </div> 
 
     </footer>
+    <script src="https://www.whatsapp.com/?lang=pt_BR"></script>
     <script src="JavaScript/script.js"></script>
+    
+    
     
 </body>
 </html>
